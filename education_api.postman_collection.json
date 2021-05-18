@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "77031580-f0a0-4f3a-addc-1461562597d8",
+		"name": "education_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Ali_R\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/authentication/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"authentication",
+						"login"
+					]
+				},
+				"description": "Login with Alir_R username;"
+			},
+			"response": []
+		},
+		{
+			"name": "Course",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJlbWFpbCI6ImFsaXJAaG9tZS5lZHUiLCJ1c2VybmFtZSI6IkFsaV9SIiwic3ViIjoiYWxpckBob21lLmVkdSIsImlhdCI6MTYyMTMzODk5NSwiZXhwIjoxNjIxNDI1Mzk1fQ.2iQFyf_v3mqzas3LjVQJDRyCEACV55ZhOptYYzrGhmXCxI0Cgahptc4GSJ2Ebq29Kq-MD94CwHF7_XkIWPYPKg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9090/course/course-base-inf/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"course",
+						"course-base-inf",
+						"1"
+					]
+				},
+				"description": "get a course with id = 1"
+			},
+			"response": []
+		},
+		{
+			"name": "Student",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJlbWFpbCI6ImFsaXJAaG9tZS5lZHUiLCJ1c2VybmFtZSI6IkFsaV9SIiwic3ViIjoiYWxpckBob21lLmVkdSIsImlhdCI6MTYyMTMzODk5NSwiZXhwIjoxNjIxNDI1Mzk1fQ.2iQFyf_v3mqzas3LjVQJDRyCEACV55ZhOptYYzrGhmXCxI0Cgahptc4GSJ2Ebq29Kq-MD94CwHF7_XkIWPYPKg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9090/student/student-base-inf/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"student",
+						"student-base-inf",
+						"1"
+					]
+				},
+				"description": "get student information for id = 1"
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Parsa_K\",\r\n    \"email\":\"parsak@home.edu\",\r\n    \"password\":\"12345678910\",\r\n    \"lastName\":\"Kalantar\",\r\n    \"firstName\":\"Parsa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/authentication/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"authentication",
+						"register"
+					]
+				},
+				"description": "register an account"
+			},
+			"response": []
+		}
+	]
+}
