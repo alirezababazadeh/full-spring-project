@@ -1,4 +1,5 @@
 package edu.home.Gateway.configuration;
+
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
