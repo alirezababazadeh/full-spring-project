@@ -9,7 +9,7 @@ contains many useful spring technologies.
 
 - Spring Cloud Gateway with jwt security.
 
-- Also contains service discovery with netflix eurika.
+- Also contains service discovery with netflix eureka.
 
 - Integrated with postgresql database.
 
